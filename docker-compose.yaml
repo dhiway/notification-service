@@ -17,6 +17,14 @@ services:
       AWS_REGION: ${AWS_REGION}
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
       AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      SMTP_HOST: ${SMTP_HOST}
+      SMTP_PORT: ${SMTP_PORT}
+      SMTP_SECURE: ${SMTP_SECURE}
+      SMTP_USER: ${SMTP_USER}
+      SMTP_PASS: ${SMTP_PASS}
+      SMTP_FROM: ${SMTP_FROM}
+      # Legacy names, still read as a fallback. Passed through so an existing
+      # .env keeps working; new setups use the SMTP_* pair above.
       SMTP_GMAIL: ${SMTP_GMAIL}
       GMAIL_USER: ${GMAIL_USER}
       GMAIL_PASS: ${GMAIL_PASS}
